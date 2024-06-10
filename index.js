@@ -1,14 +1,9 @@
-const http = require('http');
+const httpServer = require('http-server');
 
-const hostname = '127.0.0.1';
-const port = 3000;
-
-const server = http.createServer((req, res) => {
-  res.statusCode = 200;
-  res.setHeader('Content-Type', 'text/plain');
-  res.end('Hello, World!\n');
+const server = httpServer.createServer({
+  root: './public' // Specify the directory to serve files from
 });
 
-server.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
+server.listen(3000, () => {
+  console.log('Server running at http://localhost:3000/');
 });
