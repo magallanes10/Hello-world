@@ -1,0 +1,19 @@
+{
+  "name": "hello-world",
+  "version": "1.0.0",
+  "description": "A simple hello world Node.js server",
+  "main": "server.js",
+  "scripts": {
+    "start": "http-server"
+  },
+  "keywords": [
+    "node",
+    "hello",
+    "world"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "http-server": "^0.12.3"
+  }
+}
