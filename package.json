@@ -1,19 +1,17 @@
 {
-  "name": "hello-world",
+  "name": "nodejs",
   "version": "1.0.0",
-  "description": "A simple hello world Node.js server",
-  "main": "server.js",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "start": "http-server"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [
-    "node",
-    "hello",
-    "world"
-  ],
-  "author": "Your Name",
-  "license": "MIT",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "http-server": "^0.12.3"
+    "@types/node": "^18.0.6",
+    "express": "^4.19.2",
+    "http": "^0.0.1-security"
   }
 }
