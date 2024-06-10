@@ -1,9 +1,10 @@
-const httpServer = require('http-server');
+const http = require('http');
 
-const server = httpServer.createServer({
-  root: './public' // Specify the directory to serve files from
+const server = http.createServer((req, res) => {
+    res.writeHead(200, {'Content-Type': 'text/plain'});
+    res.end('Hello, World!\n');
 });
 
-server.listen(3000, () => {
-  console.log('Server running at http://localhost:3000/');
+server.listen(3000, 'localhost', () => {
+    console.log('Server running at http://localhost:3000/');
 });
